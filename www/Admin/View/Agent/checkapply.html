@@ -1,0 +1,21 @@
+<html>
+<head>
+   <title>审核申请页面</title>
+</head>
+<body>
+
+
+用户：{$applys.username}
+<br>
+
+<form method="POST" action="{$smarty.const.__MODULE__}/Agent/check"> 
+   <input type='hidden' name='uid' value='{$applys.id}'>
+   审核通过:<input type='radio' name='result' value='1'>
+   审核不通过:<input type='radio' name='result' value='2'>
+   原因：<input type='text' name='message' value=''>
+   <input type='submit' value='提交审核'>
+</form>
+
+
+</body>
+</html>

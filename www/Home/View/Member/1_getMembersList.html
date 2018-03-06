@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>会员管理</title>
+</head>
+
+<body>
+
+<center>
+
+
+<table border='1' cellpadding='10' cellspacing='0'> 
+<tr>
+   <th>序列ID</th>
+   <th>用户名</th>
+   <th>电子邮箱</th> 
+   <th>手机号码</th>
+   <th>账户金额</th>
+   <th>模式</th>
+
+</tr>
+{foreach $infos as $info}
+
+<tr>
+  <td></td>
+  <td>{$info['username']}</td>
+  <td>{$info['email']}</td>
+  <td>{$info['phone']}</td>
+  <td>{$info['balance']}</td>
+  <td>{$info['nodemode']}</td>  
+
+</tr>
+
+
+{/foreach}
+</table>
+</center>
+
+</body>
+
+</html>

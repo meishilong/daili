@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{$smarty.const.PUBLIC_URL}procss/common.css" rel="stylesheet">
+    <link href="{$smarty.const.PUBLIC_URL}procss/expand.css" rel="stylesheet">
+</head>
+<body>
+
+<!--悬浮框-->
+<div class="fixedbox">
+    <ul>
+        <li class="fixedbox_li">
+            <span class="qq" onclick="location.href='http://wpa.qq.com/msgrd?v=3&uin=83863168&site=qq&menu=yes'">在线客服</span>
+			
+        </li>
+        <li class="fixedbox_li fixe_tel">
+            <span class="tel">咨询热线</span>
+            <div class="hide_tel">
+                <p>咨询电话</p>
+                <p>13177771588</p>
+            </div>
+        </li>
+        <li class="fixedbox_li" onclick="pageScroll()">
+            <span class="top">TOP</span>
+        </li>
+    </ul>
+</div>
+<div class="expand_one">
+    <img src="{$smarty.const.PUBLIC_URL}proimages/fm.png" alt="" class="expand_fm"/>
+    <div class="expand_btn">
+        <a href="https://my.jxjunan.com/manage/home/login/">我有账号</a>
+        <a href="https://my.jxjunan.com/manage/home/register/15889411">我要注册</a>
+    </div>
+</div>
+<div class="expand_two">
+    <img src="{$smarty.const.PUBLIC_URL}proimages/cdn.png" alt=""/>
+</div>
+<div class="expand_three">
+    <img src="{$smarty.const.PUBLIC_URL}proimages/ddos.png" alt=""/>
+</div>
+<div class="expand_four">
+    <img src="{$smarty.const.PUBLIC_URL}proimages/waf.png" alt=""/>
+</div>
+<div class="expand_five">
+    <img src="{$smarty.const.PUBLIC_URL}proimages/zjcdn.png" alt=""/>
+</div>
+<div class="expand_six">
+    <p class="expand_p">邀您加入</p>
+    <p class="expand_p1">套餐升级&nbsp;体验优化</p>
+    <div class="expand_scroll">
+        <div class="expand_detail">
+            <ul class="expand_ul">
+                <li>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>普通套餐</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>4记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>100G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>50G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>高级套餐</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>10记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>150G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>80G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>VIP套餐</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>20记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>200G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>100G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>钻石套餐</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>40记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>250G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>120G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>超级VIP套餐</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>60记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>300G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>150G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>尊贵专享套餐A</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>70记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>400G(高防)</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>180G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>尊贵专享套餐B</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>10记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>无限防</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>300G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>尊贵专享套餐C</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main">
+                                <span>域名接入数</span>
+                                <p>20记录</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>节电硬防</span>
+                                <p>无限防</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>DNS流量防护</span>
+                                <p>250G</p>
+                            </div>
+                            <div class="elist_main">
+                                <span>流量限制</span>
+                                <p>不限流量</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                    <div class="expand_lmain">
+                        <div class="eli_top">
+                            <span>DNS服务</span>
+                            <p>适用于金融、游戏、论坛、个人网站及博客、电影、网站推广、棋牌、APP客户端、加速与防御</p>
+                        </div>
+                        <div class="expand_list">
+                            <div class="elist_main1">
+                                <span>支持功能</span>
+                                <p>防劫持</p>
+                                <p>自定义CD解析域名</p>
+                                <p>官方节点快速同步</p>
+                                <p>50GDNS流量防护</p>
+                            </div>
+                        </div>
+                        <a href="" class="eli_buy">购买详情</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="expand_done prev"></div>
+        <div class="expand_done next"></div>
+    </div>
+
+</div>
+<div class="expand_seven">
+    <div class="expand_bottom">
+        <dl class="expand_bmain">
+            <dt>产品服务</dt>
+            <dd><a href="">高防CDN</a></dd>
+            <dd><a href="">云WAF</a></dd>
+            <dd><a href="">DDos云防护</a></dd>
+        </dl>
+        <dl class="expand_bmain">
+            <dt>解决方案</dt>
+            <dd><a href="">游戏行业</a></dd>
+            <dd><a href="">电商行业</a></dd>
+            <dd><a href="">金融行业</a></dd>
+            <dd><a href="">企业官网</a></dd>
+            <dd><a href="">政府机关</a></dd>
+            <dd><a href="">定制服务</a></dd>
+        </dl>
+        <dl class="expand_bmain">
+            <dt>技术&帮助</dt>
+            <dd><a href="">高防CDN</a></dd>
+            <dd><a href="">账户相关</a></dd>
+            <dd><a href="">备案相关</a></dd>
+        </dl>
+        <dl class="expand_bmain">
+            <dt>关于我们</dt>
+            <dd><a href="">公司简介</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">行业资讯</a></dd>
+            <dd><a href="">公司动态</a></dd>
+        </dl>
+    </div>
+    <div class="expand_copy">Copyright © 2002-2017 JXJUNAN. 江西郡安 版权所有</div>
+</div>
+
+</body>
+<script src="{$smarty.const.PUBLIC_URL}projs/jquery-1.11.3.min.js"></script>
+<script src="{$smarty.const.PUBLIC_URL}projs/index.js"></script>
+
+</html>

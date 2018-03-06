@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>提现管理页面</title>
+</head>
+
+<body>
+<p>提现</p>
+
+<table cellpadding='10' cellspacing='0' border='1'>
+<form action="" method="post">
+<tr>
+  <td>可提现金额:{$user['balance']} <br>提现银行:{$bank['bank']}<br>提现卡号:{$bank['bankaccountnumber']}<br>银行开户名:{$bank['accountbankname']}</td>
+</tr>
+<tr>
+  <td>附带消息:<textarea rows="3" cols="20" name="message">可为空</textarea></td>
+</tr>
+<tr>
+  <td>提现金额:<input type='text' name='withdrawmoney' value=''></td>
+</tr>
+<tr>
+  <td>支付密码:<input type="password" name="paypassword" value=""></td>
+</tr>
+<tr>
+  <td><input type='submit'  value="提交"></td>
+</tr>
+<!--隐藏表单数据-->
+<input type='hidden' name='username' value="{$user['username']}">
+<input type='hidden' name='userid' value="{$user['id']}">
+
+
+
+</form>
+<table>
+
+<table cellpadding="10" cellspacing="0" border="1">
+  <tr> 
+    <td>申请时间</td>
+    <td>申请提现金额</td>
+	<td>开户银行</td>
+	<td>银行卡号</td>
+	<td>开户名</td>	
+    <td>状态</td>	
+	<td>消息</td>
+  </tr>
+  {foreach $historylist as $history}
+  <tr>
+     <td>{$history.applytime|date_format:"%Y-%m-%d"}</td>
+	 <td>{$history.withdrawmoney}元</td>
+	 <td>{$history.bank}</td>
+	 <td>{$history.bankaccountnumber}</td>
+	 <td>{$history.accountbankname}</td>
+
+
+	 {if $history.state==0}
+	   <td><font color='green'>申请中</font></td>
+	   <td>无</td>
+	 {/if}
+	 {if $history.state==1}
+	   <td><font color='green'>已成功</font></td>
+	   <td><font color='green'>申请提现成功，请留意银行卡收款</font></td>	   
+	 {/if}
+	 {if $history.state==2}
+	   <td><font color='red'>被驳回</font></td>
+	   <td><font color='red'>{$history.message}</font></td>
+	 {/if}	 
+	 
+  </tr>
+  
+  {/foreach}
+  
+
+</table>
+
+</body>
+</html>

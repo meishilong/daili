@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>总管理后台</title>
+</head>
+
+<body>
+当前登录用户为：{$username}<a href="{$smarty.const.__CONTROLLER__}/logout">登出</a><br>
+
+<a href="{$smarty.const.__MODULE__}/Agent/getApplayAgentInfos">代理申请列表</a>
+<br>
+
+
+<a href="{$smarty.const.__MODULE__}/Agent/getFormalAgentList">代理商管理</a>
+
+<br>
+<a href="{$smarty.const.__MODULE__}/cash/showWithdraw/?pass=0">提现审核</a>
+<br>
+
+<a href="{$smarty.const.__MODULE__}/Income/incomeSet">推广者收益配置</a>
+<br>
+<a href="{$smarty.const.__MODULE__}/Sheet/getDatas">财务报表管理</a>
+
+
+
+
+</body>
+
+</html>

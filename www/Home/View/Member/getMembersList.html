@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--表格插件-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{$smarty.const.PUBLIC_URL}YhhDataTable/css/jquery.paginate.css" />
+    <link rel="stylesheet" href="{$smarty.const.PUBLIC_URL}YhhDataTable/css/jquery.yhhDataTable.css" />
+	
+
+    <link href="{$smarty.const.CSS_URL}common.css" rel="stylesheet">
+    <link href="{$smarty.const.CSS_URL}login.css" rel="stylesheet">
+    <link href="{$smarty.const.CSS_URL}myindex.css" rel="stylesheet">
+</head>
+<body>
+<!--左侧导航-->
+<div class="nav">
+    <img src="{$smarty.const.PUBLIC_URL}images/logo.png" alt=""/>
+    <ul class="nav_ul">
+        <li>
+            <a class="myindex_icon" href="{$smarty.const.__MODULE__}">我的概况</a>
+        </li>
+        <li class="checked">
+            <a class="member_icon" href="{$smarty.const.__MODULE__}/member/toMembers/">会员管理</a>
+        </li>
+        <li >
+            <a class="earnings_icon" href="{$smarty.const.__MODULE__}/income/promoteMoney/">推广收益</a>
+        </li>
+        <li>
+            <a class="withdraw_icon" href="{$smarty.const.__MODULE__}/cash/showWithdraw/">提现管理</a>
+        </li>
+        <li>
+            <a class="money_icon" href="{$smarty.const.__MODULE__}/sheet/getDatas/">财务报表</a>
+        </li>
+    </ul>
+</div>
+<!--右侧内容-->
+<div class="main">
+    <div class="main_top">
+        <p>欢迎登录郡安云CDN代理商管理系统</p>
+        <div class="mtop_right">
+            <a href="" class="userinfo">
+                <img src="{$smarty.const.PUBLIC_URL}images/tx.jpg" alt=""/>
+                <span>{$username}</span>
+            </a>
+            <a class="mtop_link kf" href="javascript:void(0)">客服</a>
+            <!--<a class="mtop_link" href="">消息</a>-->
+            <a class="mtop_link" href="{$smarty.const.__MODULE__}/Index/logout">登出</a>
+        </div>
+    </div>
+    <div class="myindex">
+
+        <table id="testtable">
+            <thead><tr>
+                <th width="20%">用户名</th>
+                <th width="20%">邮箱</th>
+                <th width="20%">手机号</th>
+                <th width="20%">账户余额</th>
+                <th width="10%">模式</th>
+            </tr></thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+	
+</div>
+</body>
+<script src="{$smarty.const.PUBLIC_URL}js/jquery-1.11.3.min.js"></script>
+<script src="{$smarty.const.PUBLIC_URL}layer/layer.js"></script>
+<!--表格插件-->
+<script type="text/javascript" src="{$smarty.const.PUBLIC_URL}YhhDataTable/js/jquery.paginate.js" ></script>
+<script type="text/javascript" src="{$smarty.const.PUBLIC_URL}YhhDataTable/js/jquery.yhhDataTable.js" ></script>
+
+<script src="{$smarty.const.PUBLIC_URL}js/common.js"></script>
+<script type="text/javascript" src="{$smarty.const.PUBLIC_URL}js/member.js" ></script>
+</html>

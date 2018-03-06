@@ -1,0 +1,52 @@
+
+function pageScroll(){
+//把内容滚动指定的像素数（第一个参数是向右滚动的像素数，第二个参数是向下滚动的像素数）
+    window.scrollBy(0,-100);
+//延时递归调用，模拟滚动向上效果
+    scrolldelay = setTimeout('pageScroll()',0);
+//获取scrollTop值，声明了DTD的标准网页取document.documentElement.scrollTop，否则取document.body.scrollTop；因为二者只有一个会生效，另一个就恒为0，所以取和值可以得到网页的真正的scrollTop值
+    var sTop=document.documentElement.scrollTop+document.body.scrollTop;
+//判断当页面到达顶部，取消延时代码（否则页面滚动到顶部会无法再向下正常浏览页面）
+    if(sTop==0) clearTimeout(scrolldelay);
+}
+$(function(){
+    var liWidth,ulWidth,moveW;
+    liWidth = $(".expand_ul li").width();
+    ulWidth = liWidth*3;
+    //设置ul宽度
+    $(".expand_ul").css("width",ulWidth);
+    var i=0;
+    //点击下一个
+    $(".next").click(function(){
+        if(i<2){
+            i+=1;
+            moveW = i*liWidth;
+            $(".expand_ul").animate({left:-moveW});
+        }else{
+            i = 0;
+            $(".expand_ul").animate({left:0});
+        }
+    });
+    //点击上一个
+    $(".prev").click(function(){
+        if(i==0){
+            i = 2;
+            moveW = 2*liWidth;
+            $(".expand_ul").animate({left:-moveW});
+            return false;
+        }else{
+            i-=1;
+            moveW = i*liWidth;
+            $(".expand_ul").animate({left:-moveW});
+        }
+    });
+    //悬浮框
+    $(".fixe_tel").mouseover(function(){
+        $(".hide_tel").show();
+    });
+    $(".fixe_tel").mouseout(function(){
+        $(".hide_tel").hide();
+    });
+
+
+});

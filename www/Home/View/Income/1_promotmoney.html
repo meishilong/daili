@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<title>我的推广收益</title>
+</head>
+
+<body>
+
+<center>
+<table border='1' cellpadding='10' cellspacing='0'>
+<tr>
+  <th>时间</th>
+  <th>套餐类型</th>
+  <th>收益</th>
+</tr>
+
+{foreach $infos as $info}
+  <tr>
+    <td>{$info.time|date_format:'%Y-%m-%d'}</td>
+   <td>{$info.product}</td>
+   <td>{$info.money}</td>
+  </tr>
+{/foreach}
+</table>
+</center>
+ {$pagelist}
+
+</body>
+</html>

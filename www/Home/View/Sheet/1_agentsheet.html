@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>代理商财务表</title>
+</head>
+
+<body>
+<center>  
+<table cellpadding='10' cellspacing='0' border='1'>
+<tr>
+  <td>时间</td>
+  <td>项目</td>
+  <td>金额</td>
+  <td>套餐</td>
+  <td>状态</td>
+  <td>操作用户</td>
+</tr>
+
+{foreach $infos as $info}
+<tr>
+  <td>{$info.time|date_format:'%Y-%m-%d %H:%M'}</td>
+  <td>{$info.project}</td>
+  <td>{$info.money}</td>
+  <td>{$info.product}</td>
+  <td>{$info.state}</td>
+  <td>{$info.username}</td>
+</tr>
+{/foreach}
+<tr>
+   <td><a href="{$smarty.const.__MODULE__}/sheet/exportSheet/">导出表格</a></td>
+</tr>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+/*我的概况*/
+.myindex{padding:30px 20px;}
+.myindex_ul{display: block;zoom: 1;}
+.myindex_ul:after{content: "\0020"; display: block;  height: 0;  clear: both;}
+.myindex_ul li{display: block;float: left;padding:20px;width: 420px;margin-left: 30px;height: 160px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow:  0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow:  0 2px 6px rgba(0,0,0,0.2);border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;position: relative;background: #fff;}
+.myindex_ul li.tg{width: 338px;}
+.myindex_ul li.tg p{overflow:hidden;}
+.myindex_ul li:first-child{margin-left: 0;}
+.myindex_ul li span.title{display: block;font-size: 30px;color: #7193ca;line-height: 28px;}
+.myindex_ul li span.money{display: block;font-size: 40px;color: #71cab4;line-height: 64px;margin-top: 48px;text-align: center;}
+.myindex_ul li span.money font{font-size: 80px;color: #71cab4;}
+.myindex_ul li .txbtn{display: block;position: absolute;width: 100px;height: 30px;font-size: 14px;color: #fff;line-height: 30px;background: #7193ca;text-align: center;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius:3px;top:20px;right: 20px;}
+.myindex_echarts {padding:20px 2%;width: 96%;height: 500px;margin-top: 30px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);background: #fff;}
+.tg_title{display: block;font-size: 22px;color: #7193ca;width: 100%;text-align: center;line-height: 22px;}
+.tg_lists{overflow: hidden;padding-left: 46px;padding-top: 10px;}
+.tg_lists span{display: block;float: left;margin-right:14px;width: 18px;height: 22px;}
+.tg_lists span.tg_qq{background: url(../images/qq.png) no-repeat center center;}
+.tg_lists span.tg_tel{background: url(../images/tel.png) no-repeat center center;}
+.tg_lists input{display: block;float: left;width: 186px;height: 20px;padding: 0 6px;background: #f3f3f3;border: 1px solid #999;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius:5px;font-size: 12px;color: #999;}
+.tg_warn{display: block;font-size: 12px;color: #999;line-height: 16px;}
+.tg_btn{display: block;width: 100px;height: 30px;background: #7193ca;font-size: 14px;color: #fff;text-align: center;line-height: 30px;margin: 10px auto 0 auto;cursor: pointer;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;-o-border-radius:3px;}
+/*会员管理*/
+.yhh-data-table-frame>table.yhh-data-table th{padding:0!important;height: 50px;background: #eceef0;font-size: 20px;text-align: center;color: #7193ca;font-weight: normal;border:none;}
+.yhh-data-table-frame>table.yhh-data-table td{padding:0!important;height: 55px;background: #fff;font-size: 18px;text-align: center;color: #666;font-weight: normal;border-bottom:1px solid #eceef0;border-left:none;border-right:none;}
+.yhh-data-table-frame{padding-bottom: 20px;}
+.paginate-containter{margin-top: 20px;}
+.data-table-top-box{display: none;}
+
+/*提现管理*/
+.withdraw_ul{display: block;zoom: 1;margin-bottom: 18px;}
+.withdraw_ul:after{content: "\0020"; display: block;  height: 0;  clear: both;}
+.withdraw_ul li{display: block;float: left;padding:10px 0;width: 20%;margin-left: 2%;height: 140px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow:  0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow:  0 2px 6px rgba(0,0,0,0.2);border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;position: relative;background: #fff;}
+.withdraw_ul li:first-child{margin-left: 0;}
+.withdraw_ul li span.title{display: block;font-size: 22px;color: #7193ca;line-height: 26px;padding:0 18px;}
+.withdraw_ul li span.money{display: block;font-size: 36px;color: #71cab4;line-height: 56px;margin-top: 40px;text-align: center;}
+.withdraw_ul li span.money font{font-size: 56px;color: #71cab4;}
+.withdraw_ul li.withdraw_box{width: 34%;}
+.wbox_left{float:left;margin-right: 44px;margin-left: 20px;}
+.wbox_lmain {height: 24px;padding-top: 30px;}
+.wbox_lmain span {display: block;float: left;font-size: 16px;color: #666;line-height: 24px;}
+.wbox_lmain input {display: block;float: left;width: 258px;height: 22px;border: 1px solid #eee;margin-left: 15px;padding-left: 10px;}
+.wbox_right{float: left;padding-top: 28px;}
+.wbox_right a,.wbox_right input{display: block;width: 100px;height: 30px;font-size: 14px;color: #fff;background: #7193ca;line-height: 30px;text-align: center;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;-o-border-radius:3px;cursor: pointer;}
+.wbox_right a{margin-top: 22px;}
+/*推广收益*/
+.wbox_lmain select{display: block;float: left;width: 268px;height: 24px;border: 1px solid #eee;margin-left: 15px;}
+
+
+/*个人中心*/
+.mycenter_top{display: block;padding:30px 0;width: 100%;height: 100px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow:  0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow:  0 2px 6px rgba(0,0,0,0.2);border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;background: #fff;}
+.mycenter_top img{display: block;float: left;width: 90px;height: 90px;border-radius: 50px;-webkit-border-radius: 50px;-moz-border-radius: 50px;-o-border-radius:50px;margin-left:50px;margin-top: 8px;}
+.mycenter_info{float: left;margin-top: 22px;margin-left: 26px;}
+.mycenter_username {overflow: hidden;}
+.mycenter_username p{display: block;float:left;height:22px;font-size: 20px;color: #333;line-height: 22px; }
+.mycenter_username span{display: block;float:left;width:22px;height: 22px;background: url(../images/mycenter/blue_g.png) no-repeat center center;margin-left: 20px; }
+.mycenter_kind{display: block;margin-top: 12px;font-size: 16px;line-height: 16px;color: #666;}
+.mycenter_ul{display: block;float:left;height: 95px;margin-left: 54px;border-left:1px solid #e3ebf6;padding-left: 60px;overflow: hidden;padding-top: 5px;}
+.mycenter_ul li{display: block;font-size: 16px;color: #999;line-height: 30px;}
+.mycenter {padding:40px 6%;width: 88%;height: 480px;margin-top: 30px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);background: #fff;}
+.mycenter_done{display: block;}
+.mycenter_done li{display: block;margin-bottom: 35px;overflow: hidden;}
+.mycenter_done li span{display: block;float: left;width:92px;background: url(../images/mycenter/my01.png) no-repeat left center;height: 24px;padding-left: 35px;}
+.mycenter_done li span.mycenter_tel{background: url(../images/mycenter/tel.png) no-repeat left center;}
+.mycenter_done li span.mycenter_email{background: url(../images/mycenter/email.png) no-repeat left center;}
+.mycenter_done li span.mycenter_bank{background: url(../images/mycenter/bank.png) no-repeat left center;}
+.mycenter_done li p{display: block;float: left;font-size: 12px;color: #999;line-height: 24px;margin-left: 50px;}
+.mycenter_done li a{display: block;float: right;width: 80px;height: 24px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius:3px;font-size: 12px;color: #fff;background: #7193ca;text-align: center;line-height: 24px;}
+/*修改密码*/
+.changepsd{padding:40px 6%;width: 88%;height: 600px;margin-top: 30px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);background: #fff;}
+.change_top{width: 100%;height: 60px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;box-shadow: 0 2px 6px rgba(0,0,0,0.2);-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);background: #fff;}
+.change_top a{display: block;float: left;font-size: 16px;color: #999;line-height: 60px;margin-left: 20px;}
+.change_top span{display: block;float: left;font-size: 16px;color: #7193ca;line-height: 60px;}
+.user_form{width: 800px;margin: 0 auto;}
+.pwd_left {width: 190px;float: left;margin-right:10px;height: 24px;line-height: 24px;font-size: 16px;color: #666;text-align: right;}
+.pwd_r{width: 560px;float: left;}
+.form-control{border: 1px solid #eee;width: 550px;height: 22px;padding-left: 10px;}
+.form-group{margin-top: 35px;}
+.form-group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.form-group {
+    zoom: 1;
+}
+.pwdwarn{overflow: hidden;padding-top: 8px;}
+.pwdwarn .warn{padding:24px 20px;width:220px;float:left;height: 78px;background: url(../images/mycenter/change_bk.png) no-repeat center center;}
+.pwdwarn .warn p{margin:0;font-size: 12px;color: #0d7cd7;line-height: 22px;}
+.form_submit{clear: both;overflow: hidden;margin-top: 138px;}
+.form_submit .btnmain{margin-left: 140px;}
+.form_submit .btnmain .subbtn{float:left;margin-right:70px;display:block;width:190px;height:32px;font-size: 16px;background: #7193ca;border:none;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;color:#fff;text-align: center;line-height: 32px;}
+.change_telinput{width: 404px;}
+.change_yzm{width: 410px;float: left;margin-right: 30px;}
+/*管理端*/
+/*我的概况*/
+.admin_select{margin-left: 8px;background: #fff;overflow: hidden;height: 50px;padding: 12px 0 10px 4px;}
+.admin_select a{display: block;float: left;margin-right: 20px;width: 160px;height: 50px;font-size: 22px;color: #999;text-align: center;background: #eceef0;line-height: 50px;}
+.admin_select a.checked{color: #7193ca;background: #ebf2fc;}
+.admin_table,.admin_table1{width: 100%;background: #fff;}
+.admin_table th,.admin_table1 th{height:50px;background: #eceef0;font-size: 20px;color:#7193ca;text-align: center;}
+.admin_title{box-shadow: 0 4px 4px rgba(0,0,0,0.2);-webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.2);-moz-box-shadow: 0 4px 4px rgba(0,0,0,0.2);-o-box-shadow: 0 4px 4px rgba(0,0,0,0.2);}
+.admin_table td,.admin_table1 td{font-size: 18px;color: #666;text-align: center;height: 55px;border-bottom: 1px solid #eceef0;}
+.admin_input{display:inline-block !important;*display:inline;zoom:1;background: none;font-size: 18px;width: 128px;}
+.admin_input1{display:inline-block !important;*display:inline;zoom:1;background: none;font-size: 18px;width: 64px;}
+.admin_eyes{display:inline-block !important;*display:inline;zoom:1;width: 19px;height: 12px;background: url(../images/eyes.png) no-repeat center center;cursor: pointer;}
+.close_eye{background: url(../images/eyes_no.png) no-repeat center center;}
+.admin_yhk{font-size: 12px;}
+.admin_apply{display: block;width: 60px;height: 30px;background: #7193ca;color: #fff;font-size: 14px;text-align: center;line-height: 30px;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;-o-border-radius:3px;margin: 0 auto;}
+.admin_table1{display: none;}
+.green{color: #71cab4;}
+.red{color: #ee5656;}
+.table_more{color: #7193ca;font-size: 14px;}
+
+/*代理商管理*/
+.agentadmin_btn{display: block;width: 100px;height: 20px;margin: 0 auto;}
+.kq{background: url(../images/kq.png) no-repeat center center;background-size: 100% 100%;}
+.dj{background: url(../images/dj.png) no-repeat center center;background-size: 100% 100%;}
+.blue{color:#7193ca;font-size: 14px; }
+.mt30{margin-top: 30px;}
+/*收益配置*/
+.config_select{width: 117px;height: 22px;border: 1px solid #eee;font-size: 14px;color: #999;}
+.config_input{width: 98px;height: 22px;border: 1px solid #eee;font-size: 14px;color: #999;text-align: center;}
+.admin_apply:hover{background: #3a5d96;color:#fff;}
+
+
+/*推广链接分享*/
+.tg_main{overflow: hidden;margin-top: 25px;}
+.tg_main span{display: block;float: left;width: 24px;height: 24px;background: url(../images/mycenter/tg.png) no-repeat center center;}
+.tg_main input{display: block;float: left;padding:0 6px;width: 254px;height: 22px;border: 1px solid #999;background: #f3f3f3;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius:5px;margin-left: 5px;}
+.myindex_ul li .tg_p{display: block;margin-top:15px;font-size: 12px;color:#999;line-height: 14px;}
+.myindex_ul li.tg .btn{width: 100px;height: 30px;display: block;font-size: 14px;color:#fff;background: #7193ca;line-height: 30px;text-align: center;margin: 20px auto 0 auto;border-radius: 5px;cursor: pointer;}
+
+/*个人中心-修改*/
+.bank_num{display: block;float: left;margin-right: 20px;}
+.bank_g{float: left;padding-left:20px;width: 100px;height: 24px;background: url(../images/login/success.png) no-repeat left center;}
+
+@media screen and (max-width: 1919px){
+    .myindex{padding: 20px;}
+    .myindex_ul li{padding:14px;width: 418px;height: 140px;}
+    .myindex_ul li span.title{font-size: 28px;}
+    .myindex_ul li span.money{margin-top: 30px;font-size: 30px;}
+    .myindex_ul li span.money font{font-size: 60px;}
+    .myindex_ul li .txbtn{top:14px;height: 28px;line-height: 28px;}
+    .tg_main{margin-top: 10px;}
+    .tg_title{font-size: 20px;line-height: 24px;}
+    .myindex_ul li .tg_p{margin-top: 10px;}
+    .myindex_ul li.tg .btn{margin: 10px auto 0 auto;}
+    .myindex_echarts{height: 430px;margin-top: 20px;}
+    /*会员管理*/
+    .yhh-data-table-frame>table.yhh-data-table th,.admin_table th, .admin_table1 th{height: 50px;font-size: 20px;}
+    .yhh-data-table-frame>table.yhh-data-table td,.admin_table td, .admin_table1 td{height: 46px;font-size: 18px;}
+    /*推广收益*/
+    .wbox_left{margin-right: 20px;}
+    .withdraw_ul li span.title{font-size: 24px;}
+    .withdraw_ul li span.money{font-size: 25px;}
+    .withdraw_ul li span.money font{font-size: 45px;}
+    .wbox_lmain select{width: 128px;}
+}
+
+@media screen and (max-width: 1599px){
+    .myindex{padding: 20px;}
+    .myindex_ul li{padding:14px;width: 280px;height: 120px;}
+    .myindex_ul li span.title{font-size: 26px;}
+    .myindex_ul li span.money{margin-top: 30px;font-size: 25px;}
+    .myindex_ul li span.money font{font-size: 45px;}
+    .myindex_ul li .txbtn{top:14px;height: 28px;line-height: 28px;}
+    .tg_main{margin-top: 10px;}
+    .tg_title{font-size: 18px;line-height: 20px;}
+    .myindex_ul li .tg_p{margin-top: 5px;}
+    .myindex_ul li.tg .btn{margin: 10px auto 0 auto;}
+    .myindex_echarts{height: 345px;margin-top: 20px;}
+    /*会员管理*/
+    .yhh-data-table-frame>table.yhh-data-table th,.admin_table th, .admin_table1 th{height: 50px;font-size: 20px;}
+    .yhh-data-table-frame>table.yhh-data-table td,.admin_table td, .admin_table1 td{height: 46px;font-size: 18px;}
+    /*推广收益*/
+    .wbox_right input{width: 60px;}
+    .wbox_right a{width: 60px;}
+    .withdraw_ul li span.title{font-size: 20px;}
+    .withdraw_ul li span.money{font-size: 20px;}
+    .withdraw_ul li span.money font{font-size: 34px;}
+}
+
+@media screen and (max-width: 1436px){
+    .myindex{padding: 15px;}
+    .myindex_ul li{padding:14px;width: 264px;height: 110px;}
+    .myindex_ul li span.title{font-size: 22px;}
+    .myindex_ul li span.money{margin-top: 20px;font-size: 20px;}
+    .myindex_ul li span.money font{font-size: 38px;}
+    .myindex_ul li .txbtn{top:14px;height: 28px;line-height: 28px;}
+    .tg_main{margin-top: 10px;}
+    .tg_title{font-size: 18px;line-height: 18px;}
+    .myindex_ul li .tg_p{margin-top: 5px;}
+    .myindex_ul li.tg .btn{margin: 10px auto 0 auto;height: 24px;line-height: 24px;}
+    .myindex_echarts{height: 320px;margin-top: 15px;}
+    /*会员管理*/
+    .yhh-data-table-frame>table.yhh-data-table th,.admin_table th, .admin_table1 th{height: 50px;font-size: 20px;}
+    .yhh-data-table-frame>table.yhh-data-table td,.admin_table td, .admin_table1 td{height: 46px;font-size: 18px;}
+    /*推广收益*/
+    .wbox_lmain input{width: 120px;}
+    .wbox_left{margin-right: 20px;}
+    .wbox_right input{width: 60px;}
+    .wbox_right a{width: 60px;}
+    .withdraw_ul li span.title{font-size: 18px;}
+    .withdraw_ul li span.money{font-size: 20px;}
+    .withdraw_ul li span.money font{font-size: 30px;}
+}
+

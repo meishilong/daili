@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{$smarty.const.CSS_URL}common.css" rel="stylesheet">
+    <link href="{$smarty.const.CSS_URL}login.css" rel="stylesheet">
+    <link href="{$smarty.const.CSS_URL}myindex.css" rel="stylesheet">
+</head>
+<body>
+<!--左侧导航-->
+<div class="nav">
+    <img src="{$smarty.const.PUBLIC_URL}images/logo.png" alt=""/>
+    <ul class="nav_ul">
+        <li>
+            <a class="myindex_icon" href="{$smarty.const.__MODULE__}">我的概况</a>
+        </li>
+        <li class="checked">
+            <a class="member_icon" href="{$smarty.const.__MODULE__}/Agent/getApplayAgentInfos">申请审核</a>
+        </li>
+        <li>
+            <a class="earnings_icon" href="{$smarty.const.__MODULE__}/Income/incomeSet">收益配置</a>
+        <li>
+            <a class="mycenter_icon" href="{$smarty.const.__MODULE__}/cash/showWithdraw/?pass=0">提现审核</a>
+        </li>
+        <li>
+            <a class="money_icon" href="{$smarty.const.__MODULE__}/Agent/getFormalAgentList">代理商管理</a>
+        </li>
+        <li >
+            <a class="money_icon" href="{$smarty.const.__MODULE__}/Sheet/getDatas">财务报表</a>
+        </li>
+    </ul>
+</div>
+<!--右侧内容-->
+<div class="main">
+    <div class="main_top">
+        <p>欢迎登录郡安云CDN代理商管理系统</p>
+        <div class="mtop_right">
+            <a href="" class="userinfo">
+                <img src="{$smarty.const.PUBLIC_URL}images/tx.jpg" alt=""/>
+                <span>{$adminname}</span>
+            </a>
+            <a class="mtop_link kf" href="javascript:void(0)">客服</a>
+            <!--<a class="mtop_link" href="">消息</a>-->
+            <a class="mtop_link" href="{$smarty.const.__MODULE__}/index/logout">登出</a>
+        </div>
+    </div>
+    <!--我的概况-->
+    <div class="myindex">
+        <div class="admin_select">
+            <a  href="{$smarty.const.__MODULE__}/Agent/getApplayAgentInfos/?state=0" >待审核用户</a>
+            <a  href="{$smarty.const.__MODULE__}/Agent/getApplayAgentInfos/?state=1" >已审核用户</a>
+        </div>
+        <div class="tables">
+		<table class="admin_table" cellpadding='10' cellspacing='0'> 
+		<tr class="admin_title">
+		   <th>用户名</th>
+		   <th>银行账户</th>
+		   <th>银行用户名</th>
+		   <th>开户行</th>
+		   <th>手机号</th>
+		   <th>申请时间</th>
+		   <th>状态</th>
+		   <th>备注</th>
+		</tr>
+		{foreach $infos as $info}
+
+		<tr>
+		   <td>{$info.username}</td>
+		   <td>{$info.bankaccountnumber}</td>   
+		   <td>{$info.accountbankname}</td>
+		   <td>{$info.bank}</td>   
+		   <td>{$info.phone}</td>
+		   <td>{$info.applytime|date_format:"%Y-%m-%d %H:%M:%S"}</td>
+		   
+		   {if $info.state=='0'}
+		   <td><a class="applycheck" href='#'>进入审核</a></td>
+		   <input type='hidden' text='' class="hide_id" value="{$info.id}">
+		   {/if}
+		   {if $info.pass=='1'}
+		   <td ><font color='green'>申请成功</font></td>
+		   {/if}
+		   {if $info.pass=='2'}
+		   <td ><font color='red'>申请失败</font></td>
+		   {/if}
+		   
+		   <td>{$info.message}</td>
+		</tr>
+
+
+		{/foreach}
+		</table>
+		</center>
+        </div>
+
+
+    </div>
+</div>
+</body>
+<script src="{$smarty.const.JS_URL}jquery-1.11.3.min.js"></script>
+<script src="{$smarty.const.PUBLIC_URL}layer/layer.js"></script>
+<script src="{$smarty.const.PUBLIC_URL}echarts.js"></script>
+<script src="{$smarty.const.JS_URL}common.js"></script>
+<script src="{$smarty.const.JS_URL}adminApply.js"></script>
+<script>
+$(function(){
+		
+	//审核代理入驻申请
+	$(".applycheck").click(function(){
+		var uid = $(this).parent().parent().children(".hide_id").val();
+		layer.open({
+		type: 1,
+		title: "审核" ,//不显示标题栏   title : false/标题
+		closeBtn: true,
+		area: '400px;',
+		shade: 0.8,
+		id: 'LAY_layuipro' ,//设定一个id，防止重复弹出
+		resize: false,btn: ['通过', '不通过'],
+		btnAlign: 'c',
+		moveType: 1, //拖拽模式，0或者1
+		content: '<div><textarea placeholder="添加备注" class="textarea_msg" style="display:block;margin:0 auto;padding:4px;width:300px;height:40px;margin-top:20px;font-size:12px;line-height:14px;"></textarea></div>',
+		success: function(layero){
+			var btn = layero.find('.layui-layer-btn0');
+			var btn1 = layero.find('.layui-layer-btn1');
+			btn.click(function(){
+				var message = $(".textarea_msg").val();
+				$.post("{$smarty.const.__MODULE__}/Agent/check",{literal}{"uid":uid,"result":1,"message":message}{/literal},function(data){
+				
+				location.reload();
+				});
+			});
+			btn1.click(function(){
+				var message = $(".textarea_msg").val();
+				console.log(2);
+			
+			    $.post("{$smarty.const.__MODULE__}/Agent/check",{literal}{"uid":uid,"result":2,"message":message}{/literal},function(data){
+		
+				location.reload();
+				});
+			});
+     }
+ });
+	});
+});
+</script>
+</html>
+        
+        

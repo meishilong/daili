@@ -1,0 +1,78 @@
+/*登陆页面*/
+.login{}
+.login_img{display: block;width: 100%;height:704px; }
+.login .main{display:block;position: absolute;padding:46px 150px 0 150px;width: 400px;height: 454px;left: 50%;margin-left: -350px;top:50%;margin-top: -250px;box-shadow: 0 0 5px rgba(0,0,0,0.3);-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;background: #fff;}
+.login .main h1{display: block;width:100%;font-size: 26px;color: #1e63b6;line-height: 26px;text-align: center;margin-bottom: 40px;}
+.form_list{position: relative;width: 100%;height: 50px;padding-bottom: 35px;}
+.form_input {float:left;width: 100%;height: 100%;background: #f0f0f0;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;}
+.form_input span{display: block;float: left;margin-left: 18px;width: 26px;height: 100%;}
+.form_input .username{background: url(../images/login/login_01.png) no-repeat center center;}
+.form_input .password{background: url(../images/login/login_02.png) no-repeat center center;}
+.form_input .yzm{background: url(../images/login/login_03.png) no-repeat center center;}
+.form_input input{display: block;float: left;height:20px;border-left:1px solid #c6c6c6;background: #f0f0f0;margin-top: 15px;margin-left: 10px;padding-left: 12px;font-size: 18px;color: #666;}
+.form_warin{display:none;padding-left: 60px;font-size: 16px;color: #ec5353;line-height: 35px;}
+.w220{width: 220px;}
+.w220 input{width: 110px;}
+.yzm_pic{float: left;margin-left: 20px;background: #7193ca;width: 160px;height: 50px;}
+.form_btn{display: block;width: 100%;height: 50px;font-size: 22px;color: #fff;background: #7193ca;line-height: 50px;text-align: center;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;cursor: pointer;}
+.login_done{width: 100%;height: 16px;margin-top: 16px;}
+.login_done a{display: block;float: left;font-size: 16px;color: #7193ca;text-decoration: underline;}
+.login_done a:hover{color: #3a5d96;}
+.login_done span{display: block;float: right;font-size: 16px;color: #7193ca;}
+.form_btn:hover{background: #3a5d96;}
+
+/*申请页面*/
+.apply_top{position: absolute;top:0;left: 0;border-bottom:20px solid #f8f8f8;width: 100%;height: 70px;background: #ebf2fc;}
+.apply_top p{display: block;float: left;padding-left: 40px;font-size: 16px;color: #7193ca;line-height: 70px;}
+.apply_top div{float: right;}
+.apply_top div a{display: block;float: left;line-height: 70px;font-size: 18px;color: #507ec8;padding-right: 30px;}
+.apply_top div a:hover{color: #3a5d96;}
+.apply {margin: 0 auto;padding-top: 100px;max-width: 940px;}
+.apply h1{display: block;width: 100%;font-size: 30px;color: #7193ca;line-height: 30px;text-align: center;margin-bottom: 54px;}
+.apply_form{width: 100%;}
+.apply_ul{display: block;width: 100%;}
+.apply_li{display: block;width: 100%;padding-bottom:30px;zoom: 1;}
+.apply_li:after{
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.apply_li .title{display: block;float: left;width: 280px;margin-right: 20px;text-align: right;font-size: 16px;color: #666;}
+.apply_li input{display: block;float: left;padding-left:10px;width: 328px;height:22px;margin-right: 20px;border: 1px solid #eee;outline:none;}
+.apply_li select{display: block;float: left;padding-left:10px;width: 340px;height:24px;margin-right: 20px;border: 1px solid #eee;outline:none;}
+.apply_hint{display: block;float: left;width: 280px;font-size: 16px;color: #999;}
+.apply_warn{display: none;float: left;width: 280px;font-size: 16px;color: #ec5353;}
+.apply_success{display: none;float: left;width: 16px;height: 24px;background: url(../images/login/success.png) no-repeat center center;}
+.apply_done{overflow: hidden;margin: 0 auto;width: 440px;padding-top: 30px;}
+.apply_btn,.apply_clean{display: block;float: left;width: 160px;height: 30px;font-size: 16px;color: #fff;background: #7193ca;text-align: center;line-height: 30px;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;cursor: pointer;}
+.apply_clean{margin-left: 120px;}
+.apply_btn:hover,.apply_clean:hover{background: #3a5d96;color: #fff;}
+.apply_li input:focus{border:1px solid #3a5d96;}
+.apply_li input.telyzm_input{width: 200px;}
+#code_send{display: block;float: left;width:108px;background: #7193ca;color: #fff;font-size: 12px;line-height: 24px;text-align: center;cursor:pointer;padding: 0;}
+.select_country{padding-left:10px;position: relative;float: left;margin-right: 10px;width: 120px;border: 1px solid #eee;height: 22px;cursor: pointer;}
+.country_num{display: none;width: 130px;border: 1px solid #eee;position: absolute;top:22px;left: -1px;background: #fff;}
+.contry_icon{width:6px;height:6px;display: block;position: absolute;right:8px;top:8px;background: url(../images/sanjiao.png) no-repeat center center;}
+.apply_li input.tel{width: 184px;}
+.country_num li{display: block;overflow: hidden;padding:4px;width: 122px;cursor: pointer;}
+.country_num li:hover{background: #6fb2e5;}
+.country_gq{display: block;float: left;width: 22px;height: 16px;margin-right: 2px;border:1px solid #CCC;}
+.country_name{display: block;float: left;width:60px;font-size: 12px;line-height: 18px;}
+.country_font{display: block;float: left;font-size: 12px;line-height: 18px;}
+.select_show{width:100%;height:22px;}
+
+@media screen and (max-width: 1366px){
+    .apply_top{height: 50px;border-bottom:10px solid #f8f8f8;}
+    .apply_top p{line-height: 50px;}
+    .apply_top div a{line-height: 50px;}
+    .apply{padding-top: 70px;}
+    .apply h1{margin-bottom: 20px;font-size:26px;}
+    .apply_li{padding-bottom: 15px;}
+    .apply_done{padding-top: 5px;}
+}
+
+
+
+
+        
